@@ -1,0 +1,1263 @@
+2026-05-15 21:33:32 [main] INFO  com.naukri.drivers.DriverManager - Initializing ChromeDriver...
+2026-05-15 21:33:32 [main] INFO  com.naukri.drivers.DriverManager - Using Chrome Profile: C:/Users/rkumar72/Downloads/project/job silenium/chrome-profile
+2026-05-15 21:33:34 [main] INFO  com.naukri.drivers.DriverManager - ChromeDriver initialized successfully.
+2026-05-15 21:33:35 [main] INFO  com.naukri.services.ExcelReportService - Initialized new Excel report at: reports/applied_jobs.xlsx
+2026-05-15 21:33:51 [main] INFO  com.naukri.platforms.NaukriPlatform - Successfully loaded Naukri with user profile.
+2026-05-15 21:33:51 [main] INFO  com.naukri.services.AutoApplyService - ==========================================
+2026-05-15 21:33:51 [main] INFO  com.naukri.services.AutoApplyService - Starting search for location: Bangalore
+2026-05-15 21:33:51 [main] INFO  com.naukri.services.AutoApplyService - ==========================================
+2026-05-15 21:33:51 [main] INFO  com.naukri.platforms.NaukriPlatform - Searching for: Java Developer in Bangalore with exp: 0-2 years
+2026-05-15 21:34:10 [main] ERROR com.naukri.services.AutoApplyService - Error processing location: Bangalore
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.className: suggestor-input (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.168, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:/Users/rkumar72/Downloads...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61380}, goog:processID: 2224, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61380/devtoo..., se:cdpVersion: 148.0.7778.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5eb8a82eff360b0aabfb883eceeb44c8
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84) ~[selenium-support-4.20.0.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228) ~[selenium-support-4.20.0.jar:?]
+	at com.naukri.pages.BasePage.sendKeys(BasePage.java:65) ~[classes/:?]
+	at com.naukri.platforms.NaukriPlatform.searchJobs(NaukriPlatform.java:60) ~[classes/:?]
+	at com.naukri.services.AutoApplyService.startEngine(AutoApplyService.java:47) ~[classes/:?]
+	at com.naukri.tests.AutoApplyTest.runAutoApply(AutoApplyTest.java:22) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.1.jar:7.10.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.1.jar:7.10.1]
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) [surefire-booter-3.2.5.jar:3.2.5]
+2026-05-15 21:34:10 [main] INFO  com.naukri.services.AutoApplyService - ==========================================
+2026-05-15 21:34:10 [main] INFO  com.naukri.services.AutoApplyService - Starting search for location: Hyderabad
+2026-05-15 21:34:10 [main] INFO  com.naukri.services.AutoApplyService - ==========================================
+2026-05-15 21:34:10 [main] INFO  com.naukri.platforms.NaukriPlatform - Searching for: Java Developer in Hyderabad with exp: 0-2 years
+2026-05-15 21:34:28 [main] ERROR com.naukri.services.AutoApplyService - Error processing location: Hyderabad
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.className: suggestor-input (tried for 15 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84) ~[selenium-support-4.20.0.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228) ~[selenium-support-4.20.0.jar:?]
+	at com.naukri.pages.BasePage.sendKeys(BasePage.java:65) ~[classes/:?]
+	at com.naukri.platforms.NaukriPlatform.searchJobs(NaukriPlatform.java:60) ~[classes/:?]
+	at com.naukri.services.AutoApplyService.startEngine(AutoApplyService.java:47) ~[classes/:?]
+	at com.naukri.tests.AutoApplyTest.runAutoApply(AutoApplyTest.java:22) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.1.jar:7.10.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.1.jar:7.10.1]
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) [surefire-booter-3.2.5.jar:3.2.5]
+Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=148.0.7778.168)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5eb8a82eff360b0aabfb883eceeb44c8, findElement {value=suggestor-input, using=class name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.168, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:/Users/rkumar72/Downloads...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61380}, goog:processID: 2224, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61380/devtoo..., se:cdpVersion: 148.0.7778.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5eb8a82eff360b0aabfb883eceeb44c8
+	at jdk.internal.reflect.GeneratedConstructorAccessor20.newInstance(Unknown Source) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194) ~[selenium-support-4.20.0.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190) ~[selenium-support-4.20.0.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203) ~[selenium-support-4.20.0.jar:?]
+	... 36 more
+2026-05-15 21:34:28 [main] INFO  com.naukri.services.AutoApplyService - ==========================================
+2026-05-15 21:34:28 [main] INFO  com.naukri.services.AutoApplyService - Starting search for location: Chennai
+2026-05-15 21:34:28 [main] INFO  com.naukri.services.AutoApplyService - ==========================================
+2026-05-15 21:34:28 [main] INFO  com.naukri.platforms.NaukriPlatform - Searching for: Java Developer in Chennai with exp: 0-2 years
+2026-05-15 21:34:28 [main] ERROR com.naukri.services.AutoApplyService - Error processing location: Chennai
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=148.0.7778.168)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5eb8a82eff360b0aabfb883eceeb44c8, get {url=https://www.naukri.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.168, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:/Users/rkumar72/Downloads...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61380}, goog:processID: 2224, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61380/devtoo..., se:cdpVersion: 148.0.7778.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5eb8a82eff360b0aabfb883eceeb44c8
+	at jdk.internal.reflect.GeneratedConstructorAccessor20.newInstance(Unknown Source) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300) ~[selenium-remote-driver-4.20.0.jar:?]
+	at com.naukri.platforms.NaukriPlatform.searchJobs(NaukriPlatform.java:57) ~[classes/:?]
+	at com.naukri.services.AutoApplyService.startEngine(AutoApplyService.java:47) ~[classes/:?]
+	at com.naukri.tests.AutoApplyTest.runAutoApply(AutoApplyTest.java:22) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.1.jar:7.10.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.1.jar:7.10.1]
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) [surefire-booter-3.2.5.jar:3.2.5]
+2026-05-15 21:34:28 [main] INFO  com.naukri.services.AutoApplyService - ==========================================
+2026-05-15 21:34:28 [main] INFO  com.naukri.services.AutoApplyService - Starting search for location: Mumbai
+2026-05-15 21:34:28 [main] INFO  com.naukri.services.AutoApplyService - ==========================================
+2026-05-15 21:34:28 [main] INFO  com.naukri.platforms.NaukriPlatform - Searching for: Java Developer in Mumbai with exp: 0-2 years
+2026-05-15 21:34:28 [main] ERROR com.naukri.services.AutoApplyService - Error processing location: Mumbai
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=148.0.7778.168)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5eb8a82eff360b0aabfb883eceeb44c8, get {url=https://www.naukri.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.168, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:/Users/rkumar72/Downloads...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61380}, goog:processID: 2224, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61380/devtoo..., se:cdpVersion: 148.0.7778.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5eb8a82eff360b0aabfb883eceeb44c8
+	at jdk.internal.reflect.GeneratedConstructorAccessor20.newInstance(Unknown Source) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300) ~[selenium-remote-driver-4.20.0.jar:?]
+	at com.naukri.platforms.NaukriPlatform.searchJobs(NaukriPlatform.java:57) ~[classes/:?]
+	at com.naukri.services.AutoApplyService.startEngine(AutoApplyService.java:47) ~[classes/:?]
+	at com.naukri.tests.AutoApplyTest.runAutoApply(AutoApplyTest.java:22) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.1.jar:7.10.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.1.jar:7.10.1]
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) [surefire-booter-3.2.5.jar:3.2.5]
+2026-05-15 21:34:28 [main] INFO  com.naukri.services.AutoApplyService - ==========================================
+2026-05-15 21:34:28 [main] INFO  com.naukri.services.AutoApplyService - Starting search for location: Noida
+2026-05-15 21:34:28 [main] INFO  com.naukri.services.AutoApplyService - ==========================================
+2026-05-15 21:34:28 [main] INFO  com.naukri.platforms.NaukriPlatform - Searching for: Java Developer in Noida with exp: 0-2 years
+2026-05-15 21:34:28 [main] ERROR com.naukri.services.AutoApplyService - Error processing location: Noida
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=148.0.7778.168)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5eb8a82eff360b0aabfb883eceeb44c8, get {url=https://www.naukri.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.168, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:/Users/rkumar72/Downloads...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61380}, goog:processID: 2224, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61380/devtoo..., se:cdpVersion: 148.0.7778.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5eb8a82eff360b0aabfb883eceeb44c8
+	at jdk.internal.reflect.GeneratedConstructorAccessor20.newInstance(Unknown Source) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300) ~[selenium-remote-driver-4.20.0.jar:?]
+	at com.naukri.platforms.NaukriPlatform.searchJobs(NaukriPlatform.java:57) ~[classes/:?]
+	at com.naukri.services.AutoApplyService.startEngine(AutoApplyService.java:47) ~[classes/:?]
+	at com.naukri.tests.AutoApplyTest.runAutoApply(AutoApplyTest.java:22) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.1.jar:7.10.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.1.jar:7.10.1]
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) [surefire-booter-3.2.5.jar:3.2.5]
+2026-05-15 21:34:28 [main] INFO  com.naukri.services.AutoApplyService - ==========================================
+2026-05-15 21:34:28 [main] INFO  com.naukri.services.AutoApplyService - Starting search for location: Gurugram
+2026-05-15 21:34:28 [main] INFO  com.naukri.services.AutoApplyService - ==========================================
+2026-05-15 21:34:28 [main] INFO  com.naukri.platforms.NaukriPlatform - Searching for: Java Developer in Gurugram with exp: 0-2 years
+2026-05-15 21:34:28 [main] ERROR com.naukri.services.AutoApplyService - Error processing location: Gurugram
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=148.0.7778.168)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5eb8a82eff360b0aabfb883eceeb44c8, get {url=https://www.naukri.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.168, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:/Users/rkumar72/Downloads...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61380}, goog:processID: 2224, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61380/devtoo..., se:cdpVersion: 148.0.7778.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5eb8a82eff360b0aabfb883eceeb44c8
+	at jdk.internal.reflect.GeneratedConstructorAccessor20.newInstance(Unknown Source) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300) ~[selenium-remote-driver-4.20.0.jar:?]
+	at com.naukri.platforms.NaukriPlatform.searchJobs(NaukriPlatform.java:57) ~[classes/:?]
+	at com.naukri.services.AutoApplyService.startEngine(AutoApplyService.java:47) ~[classes/:?]
+	at com.naukri.tests.AutoApplyTest.runAutoApply(AutoApplyTest.java:22) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.1.jar:7.10.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.1.jar:7.10.1]
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) [surefire-booter-3.2.5.jar:3.2.5]
+2026-05-15 21:34:28 [main] INFO  com.naukri.services.AutoApplyService - 
+==========================================
+2026-05-15 21:34:28 [main] INFO  com.naukri.services.AutoApplyService - AUTOMATION RUN SUMMARY
+2026-05-15 21:34:28 [main] INFO  com.naukri.services.AutoApplyService - ==========================================
+2026-05-15 21:34:28 [main] INFO  com.naukri.services.AutoApplyService - Total Processed : 0
+2026-05-15 21:34:28 [main] INFO  com.naukri.services.AutoApplyService - Successfully Applied : 0
+2026-05-15 21:34:28 [main] INFO  com.naukri.services.AutoApplyService - Skipped : 0
+2026-05-15 21:34:28 [main] INFO  com.naukri.services.AutoApplyService - Failed : 0
+2026-05-15 21:34:28 [main] INFO  com.naukri.services.AutoApplyService - ==========================================
+2026-05-15 21:34:28 [main] INFO  com.naukri.services.AutoApplyService - Run finished before hitting target. Reached: 0
+2026-05-15 21:34:28 [main] INFO  com.naukri.drivers.DriverManager - Quitting ChromeDriver...
+2026-05-15 21:35:00 [main] INFO  com.naukri.drivers.DriverManager - Initializing ChromeDriver...
+2026-05-15 21:35:00 [main] INFO  com.naukri.drivers.DriverManager - Using Chrome Profile: C:/Users/rkumar72/Downloads/project/job silenium/chrome-profile
+2026-05-15 21:35:02 [main] INFO  com.naukri.drivers.DriverManager - ChromeDriver initialized successfully.
+2026-05-15 21:35:18 [main] INFO  com.naukri.platforms.NaukriPlatform - Successfully loaded Naukri with user profile.
+2026-05-15 21:35:18 [main] INFO  com.naukri.services.AutoApplyService - ==========================================
+2026-05-15 21:35:18 [main] INFO  com.naukri.services.AutoApplyService - Starting search for location: Bangalore
+2026-05-15 21:35:18 [main] INFO  com.naukri.services.AutoApplyService - ==========================================
+2026-05-15 21:35:18 [main] INFO  com.naukri.platforms.NaukriPlatform - Searching for: Java Developer in Bangalore with exp: 0-2 years
+2026-05-15 21:35:26 [main] WARN  com.naukri.platforms.NaukriPlatform - Could not find suggestor-input, trying alternative locator
+2026-05-15 21:35:26 [main] ERROR com.naukri.services.AutoApplyService - Error processing location: Bangalore
+org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c94cea6faabc5aa15080e90f2e475ac7, findElement {using=class name, value=keywordSugg}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.168, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:/Users/rkumar72/Downloads...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49701}, goog:processID: 7100, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49701/devtoo..., se:cdpVersion: 148.0.7778.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c94cea6faabc5aa15080e90f2e475ac7
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194) ~[selenium-support-4.20.0.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190) ~[selenium-support-4.20.0.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203) ~[selenium-support-4.20.0.jar:?]
+	at com.naukri.pages.BasePage.sendKeys(BasePage.java:65) ~[classes/:?]
+	at com.naukri.platforms.NaukriPlatform.searchJobs(NaukriPlatform.java:64) ~[classes/:?]
+	at com.naukri.services.AutoApplyService.startEngine(AutoApplyService.java:47) ~[classes/:?]
+	at com.naukri.tests.AutoApplyTest.runAutoApply(AutoApplyTest.java:22) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.1.jar:7.10.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.1.jar:7.10.1]
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) [surefire-booter-3.2.5.jar:3.2.5]
+2026-05-15 21:35:26 [main] INFO  com.naukri.services.AutoApplyService - ==========================================
+2026-05-15 21:35:26 [main] INFO  com.naukri.services.AutoApplyService - Starting search for location: Hyderabad
+2026-05-15 21:35:26 [main] INFO  com.naukri.services.AutoApplyService - ==========================================
+2026-05-15 21:35:26 [main] INFO  com.naukri.platforms.NaukriPlatform - Searching for: Java Developer in Hyderabad with exp: 0-2 years
+2026-05-15 21:35:26 [main] ERROR com.naukri.services.AutoApplyService - Error processing location: Hyderabad
+org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c94cea6faabc5aa15080e90f2e475ac7, get {url=https://www.naukri.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.168, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:/Users/rkumar72/Downloads...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49701}, goog:processID: 7100, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49701/devtoo..., se:cdpVersion: 148.0.7778.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c94cea6faabc5aa15080e90f2e475ac7
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300) ~[selenium-remote-driver-4.20.0.jar:?]
+	at com.naukri.platforms.NaukriPlatform.searchJobs(NaukriPlatform.java:57) ~[classes/:?]
+	at com.naukri.services.AutoApplyService.startEngine(AutoApplyService.java:47) ~[classes/:?]
+	at com.naukri.tests.AutoApplyTest.runAutoApply(AutoApplyTest.java:22) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.1.jar:7.10.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.1.jar:7.10.1]
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) [surefire-booter-3.2.5.jar:3.2.5]
+2026-05-15 21:35:26 [main] INFO  com.naukri.services.AutoApplyService - ==========================================
+2026-05-15 21:35:26 [main] INFO  com.naukri.services.AutoApplyService - Starting search for location: Chennai
+2026-05-15 21:35:26 [main] INFO  com.naukri.services.AutoApplyService - ==========================================
+2026-05-15 21:35:26 [main] INFO  com.naukri.platforms.NaukriPlatform - Searching for: Java Developer in Chennai with exp: 0-2 years
+2026-05-15 21:35:26 [main] ERROR com.naukri.services.AutoApplyService - Error processing location: Chennai
+org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c94cea6faabc5aa15080e90f2e475ac7, get {url=https://www.naukri.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.168, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:/Users/rkumar72/Downloads...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49701}, goog:processID: 7100, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49701/devtoo..., se:cdpVersion: 148.0.7778.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c94cea6faabc5aa15080e90f2e475ac7
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300) ~[selenium-remote-driver-4.20.0.jar:?]
+	at com.naukri.platforms.NaukriPlatform.searchJobs(NaukriPlatform.java:57) ~[classes/:?]
+	at com.naukri.services.AutoApplyService.startEngine(AutoApplyService.java:47) ~[classes/:?]
+	at com.naukri.tests.AutoApplyTest.runAutoApply(AutoApplyTest.java:22) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.1.jar:7.10.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.1.jar:7.10.1]
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) [surefire-booter-3.2.5.jar:3.2.5]
+2026-05-15 21:35:26 [main] INFO  com.naukri.services.AutoApplyService - ==========================================
+2026-05-15 21:35:26 [main] INFO  com.naukri.services.AutoApplyService - Starting search for location: Mumbai
+2026-05-15 21:35:26 [main] INFO  com.naukri.services.AutoApplyService - ==========================================
+2026-05-15 21:35:26 [main] INFO  com.naukri.platforms.NaukriPlatform - Searching for: Java Developer in Mumbai with exp: 0-2 years
+2026-05-15 21:35:26 [main] ERROR com.naukri.services.AutoApplyService - Error processing location: Mumbai
+org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c94cea6faabc5aa15080e90f2e475ac7, get {url=https://www.naukri.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.168, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:/Users/rkumar72/Downloads...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49701}, goog:processID: 7100, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49701/devtoo..., se:cdpVersion: 148.0.7778.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c94cea6faabc5aa15080e90f2e475ac7
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300) ~[selenium-remote-driver-4.20.0.jar:?]
+	at com.naukri.platforms.NaukriPlatform.searchJobs(NaukriPlatform.java:57) ~[classes/:?]
+	at com.naukri.services.AutoApplyService.startEngine(AutoApplyService.java:47) ~[classes/:?]
+	at com.naukri.tests.AutoApplyTest.runAutoApply(AutoApplyTest.java:22) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.1.jar:7.10.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.1.jar:7.10.1]
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) [surefire-booter-3.2.5.jar:3.2.5]
+2026-05-15 21:35:26 [main] INFO  com.naukri.services.AutoApplyService - ==========================================
+2026-05-15 21:35:26 [main] INFO  com.naukri.services.AutoApplyService - Starting search for location: Noida
+2026-05-15 21:35:26 [main] INFO  com.naukri.services.AutoApplyService - ==========================================
+2026-05-15 21:35:26 [main] INFO  com.naukri.platforms.NaukriPlatform - Searching for: Java Developer in Noida with exp: 0-2 years
+2026-05-15 21:35:26 [main] ERROR com.naukri.services.AutoApplyService - Error processing location: Noida
+org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c94cea6faabc5aa15080e90f2e475ac7, get {url=https://www.naukri.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.168, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:/Users/rkumar72/Downloads...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49701}, goog:processID: 7100, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49701/devtoo..., se:cdpVersion: 148.0.7778.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c94cea6faabc5aa15080e90f2e475ac7
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300) ~[selenium-remote-driver-4.20.0.jar:?]
+	at com.naukri.platforms.NaukriPlatform.searchJobs(NaukriPlatform.java:57) ~[classes/:?]
+	at com.naukri.services.AutoApplyService.startEngine(AutoApplyService.java:47) ~[classes/:?]
+	at com.naukri.tests.AutoApplyTest.runAutoApply(AutoApplyTest.java:22) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.1.jar:7.10.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.1.jar:7.10.1]
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) [surefire-booter-3.2.5.jar:3.2.5]
+2026-05-15 21:35:26 [main] INFO  com.naukri.services.AutoApplyService - ==========================================
+2026-05-15 21:35:26 [main] INFO  com.naukri.services.AutoApplyService - Starting search for location: Gurugram
+2026-05-15 21:35:26 [main] INFO  com.naukri.services.AutoApplyService - ==========================================
+2026-05-15 21:35:26 [main] INFO  com.naukri.platforms.NaukriPlatform - Searching for: Java Developer in Gurugram with exp: 0-2 years
+2026-05-15 21:35:26 [main] ERROR com.naukri.services.AutoApplyService - Error processing location: Gurugram
+org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c94cea6faabc5aa15080e90f2e475ac7, get {url=https://www.naukri.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.168, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:/Users/rkumar72/Downloads...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49701}, goog:processID: 7100, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49701/devtoo..., se:cdpVersion: 148.0.7778.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c94cea6faabc5aa15080e90f2e475ac7
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300) ~[selenium-remote-driver-4.20.0.jar:?]
+	at com.naukri.platforms.NaukriPlatform.searchJobs(NaukriPlatform.java:57) ~[classes/:?]
+	at com.naukri.services.AutoApplyService.startEngine(AutoApplyService.java:47) ~[classes/:?]
+	at com.naukri.tests.AutoApplyTest.runAutoApply(AutoApplyTest.java:22) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.1.jar:7.10.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.1.jar:7.10.1]
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) [surefire-booter-3.2.5.jar:3.2.5]
+2026-05-15 21:35:26 [main] INFO  com.naukri.services.AutoApplyService - 
+==========================================
+2026-05-15 21:35:26 [main] INFO  com.naukri.services.AutoApplyService - AUTOMATION RUN SUMMARY
+2026-05-15 21:35:26 [main] INFO  com.naukri.services.AutoApplyService - ==========================================
+2026-05-15 21:35:26 [main] INFO  com.naukri.services.AutoApplyService - Total Processed : 0
+2026-05-15 21:35:26 [main] INFO  com.naukri.services.AutoApplyService - Successfully Applied : 0
+2026-05-15 21:35:26 [main] INFO  com.naukri.services.AutoApplyService - Skipped : 0
+2026-05-15 21:35:26 [main] INFO  com.naukri.services.AutoApplyService - Failed : 0
+2026-05-15 21:35:26 [main] INFO  com.naukri.services.AutoApplyService - ==========================================
+2026-05-15 21:35:26 [main] INFO  com.naukri.services.AutoApplyService - Run finished before hitting target. Reached: 0
+2026-05-15 21:35:26 [main] INFO  com.naukri.drivers.DriverManager - Quitting ChromeDriver...
+2026-05-15 21:37:59 [main] INFO  com.naukri.drivers.DriverManager - Initializing ChromeDriver...
+2026-05-15 21:38:00 [main] INFO  com.naukri.drivers.DriverManager - Using Chrome Profile: C:/Users/rkumar72/Downloads/project/job silenium/chrome-profile
+2026-05-15 21:38:01 [main] INFO  com.naukri.drivers.DriverManager - ChromeDriver initialized successfully.
+2026-05-15 21:38:17 [main] INFO  com.naukri.platforms.NaukriPlatform - Successfully loaded Naukri with user profile.
+2026-05-15 21:38:17 [main] INFO  com.naukri.services.AutoApplyService - ==========================================
+2026-05-15 21:38:17 [main] INFO  com.naukri.services.AutoApplyService - Starting search for location: Bangalore
+2026-05-15 21:38:17 [main] INFO  com.naukri.services.AutoApplyService - ==========================================
+2026-05-15 21:38:17 [main] INFO  com.naukri.platforms.NaukriPlatform - Searching for: Java Developer in Bangalore with exp: 0-2 years
+2026-05-15 21:38:37 [main] WARN  com.naukri.platforms.NaukriPlatform - Could not interact with primary search input, attempting JS fallback
+2026-05-15 21:39:03 [main] WARN  com.naukri.pages.BasePage - Standard click failed. Attempting JS click on: By.xpath: //div[contains(@class, 'qsbSubmit')] | //button[contains(text(), 'Search') or contains(text(), 'SEARCH')] | //div[text()='Search'] | //button[@type='submit']
+2026-05-15 21:39:13 [main] WARN  com.naukri.platforms.NaukriPlatform - Search button click failed or wasn't needed.
+2026-05-15 21:39:19 [main] INFO  com.naukri.platforms.NaukriPlatform - Search executed.
+2026-05-15 21:39:19 [main] INFO  com.naukri.platforms.NaukriPlatform - Found 20 jobs on current page.
+2026-05-15 21:39:21 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: JAVA DEVELOPER at Diverse Lynx
+2026-05-15 21:39:46 [main] WARN  com.naukri.pages.ApplyPage - Apply button not found for: JAVA DEVELOPER. Might be external.
+2026-05-15 21:39:49 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer at Diverse Lynx
+2026-05-15 21:40:16 [main] WARN  com.naukri.pages.ApplyPage - Apply button not found for: Java Developer. Might be external.
+2026-05-15 21:40:18 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: AngularJS, Java Developer at E4 Softwares
+2026-05-15 21:40:46 [main] WARN  com.naukri.pages.ApplyPage - Apply button not found for: AngularJS, Java Developer. Might be external.
+2026-05-15 21:40:49 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer at Logicoy Software Technologies
+2026-05-15 21:41:14 [main] WARN  com.naukri.pages.ApplyPage - Apply button not found for: Java Developer. Might be external.
+2026-05-15 21:41:17 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer at Tech Narayana
+2026-05-15 21:41:43 [main] WARN  com.naukri.pages.ApplyPage - Apply button not found for: Java Developer. Might be external.
+2026-05-15 21:41:47 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer at Amiti Software Technologies
+2026-05-15 21:42:15 [main] WARN  com.naukri.pages.ApplyPage - Apply button not found for: Java Developer. Might be external.
+2026-05-15 21:42:18 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer at Signzy
+2026-05-15 21:42:45 [main] WARN  com.naukri.pages.ApplyPage - Apply button not found for: Java Developer. Might be external.
+2026-05-15 21:42:48 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer at Diverse Lynx
+2026-05-15 21:43:13 [main] WARN  com.naukri.pages.ApplyPage - Apply button not found for: Java Developer. Might be external.
+2026-05-15 21:43:17 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer | InfoEdge (DoSelect) | Bengaluru at Info Edge
+2026-05-15 21:43:33 [main] INFO  com.naukri.pages.ApplyPage - Clicking Apply button for: Java Developer | InfoEdge (DoSelect) | Bengaluru
+2026-05-15 21:44:18 [main] WARN  com.naukri.pages.ApplyPage - Cannot find Next or Submit button. Form might be stuck.
+2026-05-15 21:44:21 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer at CGI
+2026-05-15 21:44:49 [main] WARN  com.naukri.pages.ApplyPage - Apply button not found for: Java Developer. Might be external.
+2026-05-15 21:44:52 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java developer at Diverse Lynx
+2026-05-15 21:45:18 [main] WARN  com.naukri.pages.ApplyPage - Apply button not found for: Java developer. Might be external.
+2026-05-15 21:45:21 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer at Diverse Lynx
+2026-05-15 21:45:47 [main] WARN  com.naukri.pages.ApplyPage - Apply button not found for: Java Developer. Might be external.
+2026-05-15 21:45:50 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer at Diverse Lynx
+2026-05-15 21:46:16 [main] WARN  com.naukri.pages.ApplyPage - Apply button not found for: Java Developer. Might be external.
+2026-05-15 21:46:19 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer at Diverse Lynx
+2026-05-15 21:46:46 [main] WARN  com.naukri.pages.ApplyPage - Apply button not found for: Java Developer. Might be external.
+2026-05-15 21:46:49 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer - RETISIO Commerce at Retisio
+2026-05-15 21:47:16 [main] WARN  com.naukri.pages.ApplyPage - Apply button not found for: Java Developer - RETISIO Commerce. Might be external.
+2026-05-15 21:47:19 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer at Diverse Lynx
+2026-05-15 21:47:46 [main] WARN  com.naukri.pages.ApplyPage - Apply button not found for: Java Developer. Might be external.
+2026-05-15 21:47:50 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer at Maig Innovations
+2026-05-15 21:48:17 [main] WARN  com.naukri.pages.ApplyPage - Apply button not found for: Java Developer. Might be external.
+2026-05-15 21:48:20 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer at Ique Ventures
+2026-05-15 21:48:46 [main] WARN  com.naukri.pages.ApplyPage - Apply button not found for: Java Developer. Might be external.
+2026-05-15 21:48:49 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer at New Avenues Consulting
+2026-05-15 21:49:17 [main] WARN  com.naukri.pages.ApplyPage - Apply button not found for: Java Developer. Might be external.
+2026-05-15 21:49:20 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: AI-First Java Developer at Zycus Infotech
+2026-05-15 21:49:47 [main] WARN  com.naukri.pages.ApplyPage - Apply button not found for: AI-First Java Developer. Might be external.
+2026-05-15 21:49:50 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 21:49:50 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 21:49:50 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 21:49:50 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 21:49:50 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 21:49:50 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 21:49:50 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 21:49:50 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 21:49:50 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 21:49:50 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 21:49:50 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 21:49:50 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 21:49:50 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 21:49:50 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 21:49:50 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 21:49:50 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 21:49:51 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 21:49:51 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 21:49:51 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 21:49:51 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 21:49:51 [main] INFO  com.naukri.services.AutoApplyService - Progress: 0/100 successful applications.
+2026-05-15 21:50:01 [main] INFO  com.naukri.platforms.NaukriPlatform - No more pages available.
+2026-05-15 21:50:01 [main] INFO  com.naukri.services.AutoApplyService - ==========================================
+2026-05-15 21:50:01 [main] INFO  com.naukri.services.AutoApplyService - Starting search for location: Hyderabad
+2026-05-15 21:50:01 [main] INFO  com.naukri.services.AutoApplyService - ==========================================
+2026-05-15 21:50:01 [main] INFO  com.naukri.platforms.NaukriPlatform - Searching for: Java Developer in Hyderabad with exp: 0-2 years
+2026-05-15 21:50:21 [main] WARN  com.naukri.platforms.NaukriPlatform - Could not interact with primary search input, attempting JS fallback
+2026-05-15 21:50:49 [main] WARN  com.naukri.pages.BasePage - Standard click failed. Attempting JS click on: By.xpath: //div[contains(@class, 'qsbSubmit')] | //button[contains(text(), 'Search') or contains(text(), 'SEARCH')] | //div[text()='Search'] | //button[@type='submit']
+2026-05-15 21:50:59 [main] WARN  com.naukri.platforms.NaukriPlatform - Search button click failed or wasn't needed.
+2026-05-15 21:51:04 [main] INFO  com.naukri.platforms.NaukriPlatform - Search executed.
+2026-05-15 21:51:04 [main] INFO  com.naukri.platforms.NaukriPlatform - Found 20 jobs on current page.
+2026-05-15 21:51:05 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer at Diverse Lynx
+2026-05-15 21:51:33 [main] WARN  com.naukri.pages.ApplyPage - Apply button not found for: Java Developer. Might be external.
+2026-05-15 21:51:36 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer at Enique It Solutions
+2026-05-15 21:52:01 [main] WARN  com.naukri.pages.ApplyPage - Apply button not found for: Java Developer. Might be external.
+2026-05-15 21:52:04 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer at Ieverware
+2026-05-15 21:52:31 [main] WARN  com.naukri.pages.ApplyPage - Apply button not found for: Java Developer. Might be external.
+2026-05-15 21:52:35 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer at Hawk Sense Business Solutions
+2026-05-15 21:53:01 [main] WARN  com.naukri.pages.ApplyPage - Apply button not found for: Java Developer. Might be external.
+2026-05-15 21:53:04 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer at Kagami
+2026-05-15 21:53:29 [main] WARN  com.naukri.pages.ApplyPage - Apply button not found for: Java Developer. Might be external.
+2026-05-15 21:53:32 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer at Skill Hive Hub
+2026-05-15 21:53:57 [main] WARN  com.naukri.pages.ApplyPage - Apply button not found for: Java Developer. Might be external.
+2026-05-15 21:54:00 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer at Tata Consultancy Services
+2026-05-15 21:54:16 [main] INFO  com.naukri.pages.ApplyPage - Clicking Apply button for: Java Developer
+2026-05-15 21:55:00 [main] WARN  com.naukri.pages.ApplyPage - Cannot find Next or Submit button. Form might be stuck.
+2026-05-15 21:55:03 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: java Developer at Diverse Lynx
+2026-05-15 21:55:28 [main] WARN  com.naukri.pages.ApplyPage - Apply button not found for: java Developer. Might be external.
+2026-05-15 21:55:31 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Groovy Developer at Eglobal Infotech
+2026-05-15 21:55:47 [main] INFO  com.naukri.pages.ApplyPage - Clicking Apply button for: Java Groovy Developer
+2026-05-15 21:56:31 [main] WARN  com.naukri.pages.ApplyPage - Cannot find Next or Submit button. Form might be stuck.
+2026-05-15 21:56:34 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer at Dhatsol
+2026-05-15 21:57:02 [main] WARN  com.naukri.pages.ApplyPage - Apply button not found for: Java Developer. Might be external.
+2026-05-15 21:57:04 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer at Dhatri Info Solutions
+2026-05-15 21:57:29 [main] WARN  com.naukri.pages.ApplyPage - Apply button not found for: Java Developer. Might be external.
+2026-05-15 21:57:32 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer at Savina Software
+2026-05-15 21:57:58 [main] WARN  com.naukri.pages.ApplyPage - Apply button not found for: Java Developer. Might be external.
+2026-05-15 21:58:01 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer at Hanivisu
+2026-05-15 21:58:27 [main] WARN  com.naukri.pages.ApplyPage - Apply button not found for: Java Developer. Might be external.
+2026-05-15 21:58:29 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developers at Blossoms Solutions
+2026-05-15 21:58:55 [main] WARN  com.naukri.pages.ApplyPage - Apply button not found for: Java Developers. Might be external.
+2026-05-15 21:58:59 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer at Corpitsoft
+2026-05-15 21:59:25 [main] WARN  com.naukri.pages.ApplyPage - Apply button not found for: Java Developer. Might be external.
+2026-05-15 21:59:29 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer at ODED Transformational Technologies Private Limited
+2026-05-15 21:59:55 [main] WARN  com.naukri.pages.ApplyPage - Apply button not found for: Java Developer. Might be external.
+2026-05-15 21:59:57 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer at Maig Innovations
+2026-05-15 22:00:23 [main] WARN  com.naukri.pages.ApplyPage - Apply button not found for: Java Developer. Might be external.
+2026-05-15 22:00:26 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer at KTree
+2026-05-15 22:00:51 [main] WARN  com.naukri.pages.ApplyPage - Apply button not found for: Java Developer. Might be external.
+2026-05-15 22:00:54 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer at Diverse Lynx
+2026-05-15 22:01:20 [main] WARN  com.naukri.pages.ApplyPage - Apply button not found for: Java Developer. Might be external.
+2026-05-15 22:01:22 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer at Tata Consultancy Services
+2026-05-15 22:01:38 [main] INFO  com.naukri.pages.ApplyPage - Clicking Apply button for: Java Developer
+2026-05-15 22:02:23 [main] WARN  com.naukri.pages.ApplyPage - Cannot find Next or Submit button. Form might be stuck.
+2026-05-15 22:02:25 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 22:02:25 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 22:02:25 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 22:02:25 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 22:02:25 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 22:02:25 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 22:02:25 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 22:02:25 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 22:02:25 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 22:02:25 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 22:02:25 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 22:02:25 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 22:02:25 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 22:02:25 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 22:02:25 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 22:02:25 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 22:02:25 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 22:02:25 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 22:02:25 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 22:02:25 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 22:02:25 [main] INFO  com.naukri.services.AutoApplyService - Progress: 0/100 successful applications.
+2026-05-15 22:02:35 [main] INFO  com.naukri.platforms.NaukriPlatform - No more pages available.
+2026-05-15 22:02:35 [main] INFO  com.naukri.services.AutoApplyService - ==========================================
+2026-05-15 22:02:35 [main] INFO  com.naukri.services.AutoApplyService - Starting search for location: Chennai
+2026-05-15 22:02:35 [main] INFO  com.naukri.services.AutoApplyService - ==========================================
+2026-05-15 22:02:35 [main] INFO  com.naukri.platforms.NaukriPlatform - Searching for: Java Developer in Chennai with exp: 0-2 years
+2026-05-15 22:02:57 [main] WARN  com.naukri.platforms.NaukriPlatform - Could not interact with primary search input, attempting JS fallback
+2026-05-15 22:03:23 [main] WARN  com.naukri.pages.BasePage - Standard click failed. Attempting JS click on: By.xpath: //div[contains(@class, 'qsbSubmit')] | //button[contains(text(), 'Search') or contains(text(), 'SEARCH')] | //div[text()='Search'] | //button[@type='submit']
+2026-05-15 22:03:33 [main] WARN  com.naukri.platforms.NaukriPlatform - Search button click failed or wasn't needed.
+2026-05-15 22:03:38 [main] INFO  com.naukri.platforms.NaukriPlatform - Search executed.
+2026-05-15 22:03:38 [main] INFO  com.naukri.platforms.NaukriPlatform - Found 20 jobs on current page.
+2026-05-15 22:03:40 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer at MPM Infosoft
+2026-05-15 22:04:06 [main] WARN  com.naukri.pages.ApplyPage - Apply button not found for: Java Developer. Might be external.
+2026-05-15 22:04:09 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer at Zakapps Software
+2026-05-15 22:04:35 [main] WARN  com.naukri.pages.ApplyPage - Apply button not found for: Java Developer. Might be external.
+2026-05-15 22:04:39 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer at Hire mentor
+2026-05-15 22:04:54 [main] INFO  com.naukri.pages.ApplyPage - Clicking Apply button for: Java Developer
+2026-05-15 22:05:39 [main] WARN  com.naukri.pages.ApplyPage - Cannot find Next or Submit button. Form might be stuck.
+2026-05-15 22:05:42 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Product Engineer / Java Developer at IBS Software Services
+2026-05-15 22:06:09 [main] WARN  com.naukri.pages.ApplyPage - Apply button not found for: Product Engineer / Java Developer. Might be external.
+2026-05-15 22:06:12 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: BILINGUAL JAVA DEVELOPER at Fujisakura Technologies
+2026-05-15 22:06:38 [main] WARN  com.naukri.pages.ApplyPage - Apply button not found for: BILINGUAL JAVA DEVELOPER. Might be external.
+2026-05-15 22:06:40 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer at Net Connect
+2026-05-15 22:07:06 [main] WARN  com.naukri.pages.ApplyPage - Apply button not found for: Java Developer. Might be external.
+2026-05-15 22:07:10 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer at Thomson Digital
+2026-05-15 22:07:25 [main] INFO  com.naukri.pages.ApplyPage - Clicking Apply button for: Java Developer
+2026-05-15 22:08:10 [main] WARN  com.naukri.pages.ApplyPage - Cannot find Next or Submit button. Form might be stuck.
+2026-05-15 22:08:14 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer at Yakshna Technologies
+2026-05-15 22:08:41 [main] WARN  com.naukri.pages.ApplyPage - Apply button not found for: Java Developer. Might be external.
+2026-05-15 22:08:43 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer at Igo Solutions
+2026-05-15 22:09:09 [main] WARN  com.naukri.pages.ApplyPage - Apply button not found for: Java Developer. Might be external.
+2026-05-15 22:09:13 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer at Maig Innovations
+2026-05-15 22:09:39 [main] WARN  com.naukri.pages.ApplyPage - Apply button not found for: Java Developer. Might be external.
+2026-05-15 22:09:42 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer at Leading Client
+2026-05-15 22:09:57 [main] INFO  com.naukri.pages.ApplyPage - Clicking Apply button for: Java Developer
+2026-05-15 22:10:43 [main] WARN  com.naukri.pages.ApplyPage - Cannot find Next or Submit button. Form might be stuck.
+2026-05-15 22:10:47 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer at Maig Innovations
+2026-05-15 22:11:12 [main] WARN  com.naukri.pages.ApplyPage - Apply button not found for: Java Developer. Might be external.
+2026-05-15 22:11:15 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer at Rifluxyss Softwares
+2026-05-15 22:11:42 [main] WARN  com.naukri.pages.ApplyPage - Apply button not found for: Java Developer. Might be external.
+2026-05-15 22:11:45 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer at Diverse Lynx
+2026-05-15 22:12:12 [main] WARN  com.naukri.pages.ApplyPage - Apply button not found for: Java Developer. Might be external.
+2026-05-15 22:12:15 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer at Squircle IT
+2026-05-15 22:12:41 [main] WARN  com.naukri.pages.ApplyPage - Apply button not found for: Java Developer. Might be external.
+2026-05-15 22:12:44 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer (Pan India). at Infosys
+2026-05-15 22:13:02 [main] INFO  com.naukri.pages.ApplyPage - Clicking Apply button for: Java Developer (Pan India).
+2026-05-15 22:13:47 [main] WARN  com.naukri.pages.ApplyPage - Cannot find Next or Submit button. Form might be stuck.
+2026-05-15 22:13:49 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Tech Java Developer - Atos at Foray Software
+2026-05-15 22:14:16 [main] WARN  com.naukri.pages.ApplyPage - Apply button not found for: Tech Java Developer - Atos. Might be external.
+2026-05-15 22:14:20 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer (Bangalore)-H at Infosys
+2026-05-15 22:14:36 [main] INFO  com.naukri.pages.ApplyPage - Clicking Apply button for: Java Developer (Bangalore)-H
+2026-05-15 22:15:22 [main] WARN  com.naukri.pages.ApplyPage - Cannot find Next or Submit button. Form might be stuck.
+2026-05-15 22:15:25 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer(5-8 Years)-Pan India at Infosys
+2026-05-15 22:15:42 [main] INFO  com.naukri.pages.ApplyPage - Clicking Apply button for: Java Developer(5-8 Years)-Pan India
+2026-05-15 22:16:27 [main] WARN  com.naukri.pages.ApplyPage - Cannot find Next or Submit button. Form might be stuck.
+2026-05-15 22:16:30 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer at Tata Consultancy Services
+2026-05-15 22:16:46 [main] INFO  com.naukri.pages.ApplyPage - Clicking Apply button for: Java Developer
+2026-05-15 22:17:30 [main] WARN  com.naukri.pages.ApplyPage - Cannot find Next or Submit button. Form might be stuck.
+2026-05-15 22:17:31 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 22:17:31 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 22:17:31 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 22:17:31 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 22:17:31 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 22:17:31 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 22:17:31 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 22:17:31 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 22:17:32 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 22:17:32 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 22:17:32 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 22:17:32 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 22:17:32 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 22:17:32 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 22:17:32 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 22:17:32 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 22:17:32 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 22:17:32 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 22:17:32 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 22:17:32 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 22:17:32 [main] INFO  com.naukri.services.AutoApplyService - Progress: 0/100 successful applications.
+2026-05-15 22:17:42 [main] INFO  com.naukri.platforms.NaukriPlatform - No more pages available.
+2026-05-15 22:17:42 [main] INFO  com.naukri.services.AutoApplyService - ==========================================
+2026-05-15 22:17:42 [main] INFO  com.naukri.services.AutoApplyService - Starting search for location: Mumbai
+2026-05-15 22:17:42 [main] INFO  com.naukri.services.AutoApplyService - ==========================================
+2026-05-15 22:17:42 [main] INFO  com.naukri.platforms.NaukriPlatform - Searching for: Java Developer in Mumbai with exp: 0-2 years
+2026-05-15 22:18:02 [main] WARN  com.naukri.platforms.NaukriPlatform - Could not interact with primary search input, attempting JS fallback
+2026-05-15 22:18:27 [main] WARN  com.naukri.pages.BasePage - Standard click failed. Attempting JS click on: By.xpath: //div[contains(@class, 'qsbSubmit')] | //button[contains(text(), 'Search') or contains(text(), 'SEARCH')] | //div[text()='Search'] | //button[@type='submit']
+2026-05-15 22:18:37 [main] WARN  com.naukri.platforms.NaukriPlatform - Search button click failed or wasn't needed.
+2026-05-15 22:18:42 [main] INFO  com.naukri.platforms.NaukriPlatform - Search executed.
+2026-05-15 22:18:42 [main] INFO  com.naukri.platforms.NaukriPlatform - Found 20 jobs on current page.
+2026-05-15 22:18:43 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer at Acmasoft
+2026-05-15 22:19:09 [main] WARN  com.naukri.pages.ApplyPage - Apply button not found for: Java Developer. Might be external.
+2026-05-15 22:19:12 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer at Leading Client
+2026-05-15 22:19:29 [main] INFO  com.naukri.pages.ApplyPage - Clicking Apply button for: Java Developer
+2026-05-15 22:20:14 [main] WARN  com.naukri.pages.ApplyPage - Cannot find Next or Submit button. Form might be stuck.
+2026-05-15 22:20:17 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer 8 at Logic Planet
+2026-05-15 22:20:44 [main] WARN  com.naukri.pages.ApplyPage - Apply button not found for: Java Developer 8. Might be external.
+2026-05-15 22:20:47 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer at Chowgule Mediconsult
+2026-05-15 22:21:12 [main] WARN  com.naukri.pages.ApplyPage - Apply button not found for: Java Developer. Might be external.
+2026-05-15 22:21:15 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer at Delphic India
+2026-05-15 22:21:40 [main] WARN  com.naukri.pages.ApplyPage - Apply button not found for: Java Developer. Might be external.
+2026-05-15 22:21:44 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer 8 at Logic Planet
+2026-05-15 22:22:12 [main] WARN  com.naukri.pages.ApplyPage - Apply button not found for: Java Developer 8. Might be external.
+2026-05-15 22:22:15 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer at Hanbit Automation Technologies
+2026-05-15 22:22:42 [main] WARN  com.naukri.pages.ApplyPage - Apply button not found for: Java Developer. Might be external.
+2026-05-15 22:22:45 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer at Yakshna Technologies
+2026-05-15 22:23:12 [main] WARN  com.naukri.pages.ApplyPage - Apply button not found for: Java Developer. Might be external.
+2026-05-15 22:23:15 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer at mspring infotech
+2026-05-15 22:23:42 [main] WARN  com.naukri.pages.ApplyPage - Apply button not found for: Java Developer. Might be external.
+2026-05-15 22:23:46 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer at Kiebot
+2026-05-15 22:24:12 [main] WARN  com.naukri.pages.ApplyPage - Apply button not found for: Java Developer. Might be external.
+2026-05-15 22:24:15 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer at Maig Innovations
+2026-05-15 22:24:42 [main] WARN  com.naukri.pages.ApplyPage - Apply button not found for: Java Developer. Might be external.
+2026-05-15 22:24:45 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer at Maig Innovations
+2026-05-15 22:25:10 [main] WARN  com.naukri.pages.ApplyPage - Apply button not found for: Java Developer. Might be external.
+2026-05-15 22:25:12 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: AI-First Java Developer at Zycus Infotech
+2026-05-15 22:25:40 [main] WARN  com.naukri.pages.ApplyPage - Apply button not found for: AI-First Java Developer. Might be external.
+2026-05-15 22:25:44 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer at Clover Infotech
+2026-05-15 22:26:00 [main] INFO  com.naukri.pages.ApplyPage - Clicking Apply button for: Java Developer
+2026-05-15 22:26:45 [main] WARN  com.naukri.pages.ApplyPage - Cannot find Next or Submit button. Form might be stuck.
+2026-05-15 22:26:49 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer @Infosys-SH at Infosys
+2026-05-15 22:27:04 [main] INFO  com.naukri.pages.ApplyPage - Clicking Apply button for: Java Developer @Infosys-SH
+2026-05-15 22:27:50 [main] WARN  com.naukri.pages.ApplyPage - Cannot find Next or Submit button. Form might be stuck.
+2026-05-15 22:27:54 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer (Pan India). at Infosys
+2026-05-15 22:28:08 [main] INFO  com.naukri.pages.ApplyPage - Clicking Apply button for: Java Developer (Pan India).
+2026-05-15 22:28:53 [main] WARN  com.naukri.pages.ApplyPage - Cannot find Next or Submit button. Form might be stuck.
+2026-05-15 22:28:57 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer at Mphasis
+2026-05-15 22:29:13 [main] INFO  com.naukri.pages.ApplyPage - Clicking Apply button for: Java Developer
+2026-05-15 22:29:58 [main] WARN  com.naukri.pages.ApplyPage - Cannot find Next or Submit button. Form might be stuck.
+2026-05-15 22:30:00 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer- Pan India at Infosys
+2026-05-15 22:30:16 [main] INFO  com.naukri.pages.ApplyPage - Clicking Apply button for: Java Developer- Pan India
+2026-05-15 22:31:00 [main] WARN  com.naukri.pages.ApplyPage - Cannot find Next or Submit button. Form might be stuck.
+2026-05-15 22:31:03 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer at TOP MNC
+2026-05-15 22:31:19 [main] INFO  com.naukri.pages.ApplyPage - Clicking Apply button for: Java Developer
+2026-05-15 22:32:05 [main] WARN  com.naukri.pages.ApplyPage - Cannot find Next or Submit button. Form might be stuck.
+2026-05-15 22:32:08 [main] INFO  com.naukri.platforms.NaukriPlatform - Processing job: Java Developer - CashOS at Cashos Technologies Pte Ltd
+2026-05-15 22:32:30 [main] WARN  com.naukri.pages.ApplyPage - Apply button not found for: Java Developer - CashOS. Might be external.
+2026-05-15 22:32:30 [main] ERROR com.naukri.platforms.NaukriPlatform - Error processing a job card
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=148.0.7778.168)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [01e2ded9b85396e6b4679f67bee596dc, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.168, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:/Users/rkumar72/Downloads...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57384}, goog:processID: 2440, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57384/devtoo..., se:cdpVersion: 148.0.7778.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 01e2ded9b85396e6b4679f67bee596dc
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:405) ~[selenium-remote-driver-4.20.0.jar:?]
+	at com.naukri.platforms.NaukriPlatform.processCurrentPageJobs(NaukriPlatform.java:176) ~[classes/:?]
+	at com.naukri.services.AutoApplyService.startEngine(AutoApplyService.java:51) ~[classes/:?]
+	at com.naukri.tests.AutoApplyTest.runAutoApply(AutoApplyTest.java:22) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.1.jar:7.10.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.1.jar:7.10.1]
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) [surefire-booter-3.2.5.jar:3.2.5]
+2026-05-15 22:32:30 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 22:32:30 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 22:32:30 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 22:32:31 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 22:32:31 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 22:32:31 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 22:32:31 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 22:32:31 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 22:32:31 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 22:32:31 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 22:32:31 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 22:32:31 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 22:32:31 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 22:32:31 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 22:32:31 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 22:32:31 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 22:32:31 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 22:32:31 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 22:32:32 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 22:32:32 [main] INFO  com.naukri.services.ExcelReportService - Appended 1 jobs to Excel report.
+2026-05-15 22:32:32 [main] INFO  com.naukri.services.AutoApplyService - Progress: 0/100 successful applications.
+2026-05-15 22:32:37 [main] INFO  com.naukri.platforms.NaukriPlatform - No more pages available.
+2026-05-15 22:32:37 [main] INFO  com.naukri.services.AutoApplyService - ==========================================
+2026-05-15 22:32:37 [main] INFO  com.naukri.services.AutoApplyService - Starting search for location: Noida
+2026-05-15 22:32:37 [main] INFO  com.naukri.services.AutoApplyService - ==========================================
+2026-05-15 22:32:37 [main] INFO  com.naukri.platforms.NaukriPlatform - Searching for: Java Developer in Noida with exp: 0-2 years
+2026-05-15 22:32:37 [main] ERROR com.naukri.services.AutoApplyService - Error processing location: Noida
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=148.0.7778.168)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [01e2ded9b85396e6b4679f67bee596dc, get {url=https://www.naukri.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.168, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:/Users/rkumar72/Downloads...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57384}, goog:processID: 2440, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57384/devtoo..., se:cdpVersion: 148.0.7778.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 01e2ded9b85396e6b4679f67bee596dc
+	at jdk.internal.reflect.GeneratedConstructorAccessor55.newInstance(Unknown Source) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300) ~[selenium-remote-driver-4.20.0.jar:?]
+	at com.naukri.platforms.NaukriPlatform.searchJobs(NaukriPlatform.java:55) ~[classes/:?]
+	at com.naukri.services.AutoApplyService.startEngine(AutoApplyService.java:47) ~[classes/:?]
+	at com.naukri.tests.AutoApplyTest.runAutoApply(AutoApplyTest.java:22) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.1.jar:7.10.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.1.jar:7.10.1]
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) [surefire-booter-3.2.5.jar:3.2.5]
+2026-05-15 22:32:37 [main] INFO  com.naukri.services.AutoApplyService - ==========================================
+2026-05-15 22:32:37 [main] INFO  com.naukri.services.AutoApplyService - Starting search for location: Gurugram
+2026-05-15 22:32:37 [main] INFO  com.naukri.services.AutoApplyService - ==========================================
+2026-05-15 22:32:37 [main] INFO  com.naukri.platforms.NaukriPlatform - Searching for: Java Developer in Gurugram with exp: 0-2 years
+2026-05-15 22:32:37 [main] ERROR com.naukri.services.AutoApplyService - Error processing location: Gurugram
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=148.0.7778.168)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [01e2ded9b85396e6b4679f67bee596dc, get {url=https://www.naukri.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.168, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:/Users/rkumar72/Downloads...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57384}, goog:processID: 2440, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57384/devtoo..., se:cdpVersion: 148.0.7778.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 01e2ded9b85396e6b4679f67bee596dc
+	at jdk.internal.reflect.GeneratedConstructorAccessor55.newInstance(Unknown Source) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300) ~[selenium-remote-driver-4.20.0.jar:?]
+	at com.naukri.platforms.NaukriPlatform.searchJobs(NaukriPlatform.java:55) ~[classes/:?]
+	at com.naukri.services.AutoApplyService.startEngine(AutoApplyService.java:47) ~[classes/:?]
+	at com.naukri.tests.AutoApplyTest.runAutoApply(AutoApplyTest.java:22) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.1.jar:7.10.1]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.1.jar:7.10.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.1.jar:7.10.1]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.1.jar:7.10.1]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.1.jar:7.10.1]
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) [surefire-booter-3.2.5.jar:3.2.5]
+2026-05-15 22:32:37 [main] INFO  com.naukri.services.AutoApplyService - 
+==========================================
+2026-05-15 22:32:37 [main] INFO  com.naukri.services.AutoApplyService - AUTOMATION RUN SUMMARY
+2026-05-15 22:32:37 [main] INFO  com.naukri.services.AutoApplyService - ==========================================
+2026-05-15 22:32:37 [main] INFO  com.naukri.services.AutoApplyService - Total Processed : 80
+2026-05-15 22:32:37 [main] INFO  com.naukri.services.AutoApplyService - Successfully Applied : 0
+2026-05-15 22:32:37 [main] INFO  com.naukri.services.AutoApplyService - Skipped : 0
+2026-05-15 22:32:37 [main] INFO  com.naukri.services.AutoApplyService - Failed : 80
+2026-05-15 22:32:37 [main] INFO  com.naukri.services.AutoApplyService - ==========================================
+2026-05-15 22:32:37 [main] INFO  com.naukri.services.AutoApplyService - Run finished before hitting target. Reached: 0
+2026-05-15 22:32:37 [main] INFO  com.naukri.drivers.DriverManager - Quitting ChromeDriver...

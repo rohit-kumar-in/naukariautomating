@@ -1,0 +1,12 @@
+com\naukri\services\AutoApplyService.class
+com\naukri\utils\RetryUtils.class
+com\naukri\models\JobListing$JobListingBuilder.class
+com\naukri\drivers\DriverManager.class
+com\naukri\models\JobListing.class
+com\naukri\utils\ScreenshotUtils.class
+com\naukri\services\ExcelReportService.class
+com\naukri\utils\WaitUtils.class
+com\naukri\platforms\NaukriPlatform.class
+com\naukri\pages\ApplyPage.class
+com\naukri\pages\BasePage.class
+com\naukri\config\ConfigManager.class

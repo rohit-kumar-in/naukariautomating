@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-05-15T21:38:01 IST" name="Naukri Auto Apply Suite" finished-at="2026-05-15T22:32:37 IST" duration-ms="3275448">
+    <groups>
+    </groups>
+    <test started-at="2026-05-15T21:38:01 IST" name="Auto Apply Tests" finished-at="2026-05-15T22:32:37 IST" duration-ms="3275448">
+      <class name="com.naukri.tests.AutoApplyTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.naukri.tests.AutoApplyTest@222545dc]" started-at="2026-05-15T21:37:59 IST" name="setup" finished-at="2026-05-15T21:38:01 IST" duration-ms="2528" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="runAutoApply()[pri:0, instance:com.naukri.tests.AutoApplyTest@222545dc]" started-at="2026-05-15T21:38:01 IST" name="runAutoApply" finished-at="2026-05-15T22:32:37 IST" duration-ms="3275394" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runAutoApply -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.naukri.tests.AutoApplyTest@222545dc]" started-at="2026-05-15T22:32:37 IST" name="teardown" finished-at="2026-05-15T22:32:37 IST" duration-ms="405" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.naukri.tests.AutoApplyTest -->
+    </test> <!-- Auto Apply Tests -->
+  </suite> <!-- Naukri Auto Apply Suite -->
+</testng-results>
